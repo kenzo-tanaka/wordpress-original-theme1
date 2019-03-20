@@ -1,0 +1,675 @@
+@charset "UTF-8";
+
+/*
+theme Name: KENZO
+Author: KENZO TANAKA
+Description: original theme created by KENZO TANAKA
+version： 1.0.0
+*/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2rem;
+  font-family: 'Abel',"Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 4;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.site-title {
+  font-size: 1.2rem;
+  display: inline-block;
+  font-weight: 700;
+  margin: 17px 0  0 25px;
+  vertical-align: middle;
+  max-width: 80%;
+}
+
+.site-title a {
+  display: inline-block;
+  padding: 3px 13px;
+  border: 3px solid #333;
+  line-height: 150%;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #333;
+  text-decoration: none;
+}
+
+.header-inner {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: 25px;
+}
+
+.menu-icon {
+  color: #000;
+  float: right;
+  font-size: 30px;
+  padding: 21px 0;
+}
+
+.toggle-menu {
+  margin-top: 70px;
+  background-color: #fff;
+  
+  width: 100%;
+  display: none;
+}
+
+.toggle-menu ul {
+  width: 100%;
+  margin-left: 15%;
+  list-style: none;
+  float: left;
+}
+
+.toggle-menu ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  transform: translateX(300px);
+  transition: 0.3s;
+  }
+
+.drawer.action {
+  width: 100%;
+  transform: translateX(0);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  }
+
+body.action {
+  overflow-y: hidden; }
+
+.social-media-icons{
+  float:left;
+  margin: 22px 25px 0 0;
+  font-family: FontAwesome, sans-serif;
+}
+
+.social-media-icons li{
+  list-style: none;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.insta:before {
+  font-family: "Font Awesome 5 Brands";
+  content: '\f16d';
+  font-weight: 900;
+}
+.youtube:before {
+  font-family: "Font Awesome 5 Brands";
+  content: '\f167';
+  font-weight: 900;
+}
+.facebook:before {
+  font-family: "Font Awesome 5 Brands";
+  content: '\f39e';
+  font-weight: 900;
+}
+.twitter:before {
+  font-family: "Font Awesome 5 Brands";
+  content: '\f099';
+  font-weight: 900;
+}
+
+/* --------------------------------
+ * body
+ * -------------------------------- */
+
+.intro-wrapper {
+  height: 300px;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  top: 80px;
+  padding: 10px 0px 0px 25px; 
+}
+
+.intro-inner {
+  width: 80%;
+}
+
+.intro-inner h2 {
+  font-size: 2.0rem;
+  display: block;
+}
+
+#wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;   /*全体の中央寄せ*/
+}
+#container {
+  width: 100%;
+  margin: 0 auto;   /*中央寄せ*/
+  position: relative;
+  margin-top: 100px;
+}
+.item {
+  background-color: #fff;
+}
+
+.item .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#post-content {
+  position: fixed;
+  top: 90px;
+  width: 100%;
+}
+
+.kiji {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.kiji > p{
+  margin-left: 10px;
+}
+
+.thumbnail img{
+  width: 95%!important;
+  max-width:1245px;
+  margin-left: 10px;
+}
+
+.content-title {
+  margin-left: 10px;
+}
+
+#posts-main {
+  margin-top: 100px;
+  height: auto;
+  display: block;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+#posts-content {
+  float: left;
+  margin: 0 auto;
+  width: 70%;
+}
+
+#posts-main article {
+  border: 1px solid #eee;
+  margin-top: 10px;
+}
+
+#posts-content article {
+  background-color: #fff;
+}
+
+.m-thumbnail {
+  opacity: 1;
+  position: relative;
+}
+.m-thumbnail > img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+#posts-content article .entry-content {
+  padding: 20px 30px 30px;
+}
+
+#posts-content article .entry-title {
+  line-height: 45px;
+  margin: 0 0 5px;
+  position: relative;
+  text-align: center;
+}
+
+article .entry-title > a {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#posts-content article .entry-summary {
+  color: #555;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  margin: 20px 0;
+  text-align: justify;
+}
+#posts-content article .readmore {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#posts-content article .link-more {
+  border-bottom: 1px solid;
+  color: #888;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+
+/* --------------------------------
+ * sidebar
+ * -------------------------------- */
+#sidebar {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 28%;
+  float: left;
+  
+}
+.widget {
+  background-color: #fff;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  position: relative;
+}
+.widget_title {
+  color: #555;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  text-transform: capitalize;
+  font-family: Dancing Script, sans-serif;
+  text-align: left;
+}
+.about-widget {
+  text-align: center;
+}
+.about-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.about-description {
+  margin: 0;
+  text-align: left;
+  font-size: 0.8em;
+}
+.widget_categories ul{
+  list-style: none;
+}
+
+.widget_categories ul li {
+  border-bottom: 1px dashed #ebebeb;
+  display: inline-block;
+  line-height: 45px;
+  width: 100%;
+}
+
+.widget_categories li {
+  color: #999;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.tagcloud a {
+  border:1px solid #eee;
+  padding: 10px;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+
+
+.site-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 4px double #ECECEC;
+  background-color: #fff;
+}
+
+footer .site-info {
+  width: 100%;
+  text-align: center;
+  color: #9A9A9A;
+  font-size: 13px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+a {
+  color: #BB992E;
+  text-decoration: none;
+}
+
+/* --------------------------------
+ * responsive
+ * -------------------------------- */
+
+@media ( min-width: 992px){
+  .container {
+    width: 970px;
+  }
+}
+
+
+@media ( min-width: 768px){
+  .container {
+    width: 750px;
+  }
+}
+
+/* --------------------------------
+ * topページで使用するギャラリーに関するCSS
+ * -------------------------------- */
+
+
+a {
+    text-decoration: none;
+    line-height: inherit;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+.row {
+    max-width: 1245px;
+    margin: 0 auto;
+}
+
+.row img {
+    height: 300px;
+    max-width: 100%;
+}
+
+[class*='col-'] {
+    float: left;
+    padding: 20px;
+}
+
+/* Clearfix */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-3 {
+    width: 33.33%;
+}
+
+img {
+    vertical-align: top;
+}
+
+.image-center {
+    display: block;
+    margin: 0 auto;
+}
+
+a img {
+    border: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -webkit-backface-visibility: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* gallery*/
+
+#gallery img {
+    max-height: 300px;
+}
+
+#gallery [class*='col-'] {
+    padding: 0;
+}
+
+#gallery a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#gallery a:hover img {
+    opacity: 0.5;
+    -moz-backface-visibility: hidden;
+}
+
+/* responsive */
+
+
+@media (max-width: 480px) {
+    .col-3{
+        width: 100%;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-2-3, .col-3-4, .col-9-10, .col-61, .col-38, .row {
+        width: 100%;
+    }
+    .col-3 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .row {
+        padding: 15px 0 !important;
+    }
+    .row {
+        width: 100%;
+    }
+    .col-3{
+        width: 50%;
+    }
+
+}
+
+/* --------------------------------
+ * swiper slides
+ * -------------------------------- */
+
+.swiper-container {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  max-width: 1245px;
+}
+
+.swiper-container {
+  text-align: center;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  box-sizing: content-box;
+  transition-property: transform;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide .title-text{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------
+ * about section
+ * -------------------------------- */
+
+
+*,:after,:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: '';
+}
+
+
+.card {
+  max-width: 1245px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.card .card-block {
+  padding: 3rem 6rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-family: 'Abel',"Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #000;
+}
+
+.boxrow {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.aboutimg{
+  width: 45%;
+}
+
+.about-text{
+  width: 40%;
+  font-size: 0.9em;
+}
+
+.about-text > p {
+  font-family: 'Abel',"Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+
+.aboutimg , .about-text {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.boxrow:after, .boxrow:before {
+  content: "";
+  display: table;
+}
+
+
+/* responsive */
+
+@media ( max-width: 992px){
+  
+  .card .card-block {
+    padding: 1rem;
+  }
+  .aboutimg {
+    width: 100%;
+  }
+  .about-text{
+    width: 100%;
+  }
+}
+
